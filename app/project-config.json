@@ -3,9 +3,9 @@
   "projectType": "shell-template",
   "version": "0.0.1",
   "faviconPath": "favicon.ico",
-  "menuOrientation": "horizontal",
+  "menuOrientation": "none",
   "selectedTheme": "light-theme",
-  "useWebXPanel": true,
+  "useWebXPanel": false,
   "forceDeviceXPanel": false,
   "themes": [
     {
@@ -100,7 +100,7 @@
     "$component": ""
   },
   "footer": {
-    "display": true,
+    "display": false,
     "$component": ""
   },
   "content": {
@@ -127,6 +127,17 @@
         }
       }
     ],
-    "widgets": []
+    "widgets": [
+      {
+        "widgetName": "home",
+        "fullPath": "./app/project/components/widgets/home/",
+        "fileName": "home.html"
+      },
+      {
+        "widgetName": "control",
+        "fullPath": "./app/project/components/widgets/control/",
+        "fileName": "control.html"
+      }
+    ]
   }
 }

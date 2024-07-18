@@ -1,0 +1,228 @@
+{
+  "cues": [
+    {
+      "type": "b",
+      "event": "starting-up",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "starting-up",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "shutting-down",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "shutting-down",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "starting-up",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "shutting-down",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "default mode",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "default mode",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode a",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode b",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "online mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "custom mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "professor mode a",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "default mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode a",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode b",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "online mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "custom mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "professor mode b",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "default mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode a",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode b",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "online mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "custom mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "online mode",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "default mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode a",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode b",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "online mode",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "custom mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "custom mode",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "default mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode a",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode b",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "online mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "custom mode",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    }
+  ],
+  "onStart": []
+}

@@ -1,4 +1,73 @@
 {
-  "cues": [],
-  "onStart": []
+  "cues": [
+    {
+      "type": "b",
+      "event": "btn-click-0",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "show_first_view_signal",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "show_second_view_signal",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "btn-select-0",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "btn-select-1",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "btn-click-1",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "show_first_view_signal",
+          "value": false,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "show_second_view_signal",
+          "value": true,
+          "type": "b",
+          "logic": "set"
+        },
+        {
+          "state": "btn-select-0",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "btn-select-1",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    }
+  ],
+  "onStart": [
+    {
+      "state": "btn-select-0",
+      "type": "boolean",
+      "value": true
+    }
+  ]
 }

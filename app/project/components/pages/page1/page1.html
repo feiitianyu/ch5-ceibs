@@ -11,6 +11,39 @@
 
 <section id="page1-page" class="details-container" aria-labelledby="Page1">
     <!-- BEGIN::CHANGEAREA - your page html markup goes here -->
+    <div id="page1-header">
+        <div id="page1-header-left">
+            <ch5-image url="./app/project/assets/img/ceibs-logo.jpg" width="25px" height="25px"></ch5-image>
+            <span style="font-size: 20px;margin-left: 8px;">CEIBS</span>
+        </div>
+        <div id="page1-header-right">
+            <!-- <ch5-button label="首页" customclass="page1-header-nav primary-btn"></ch5-button>
+            <ch5-button label="控制" customclass="page1-header-nav second-btn "></ch5-button> -->
+            <ch5-tab-button
+                numberofitems="2"
+                indexid="idx"
+                buttonreceivestateselected="btn-select-{{idx}}"
+                buttonsendeventonclick="btn-click-{{idx}}"
+                buttontype="text"
+                style="width: 440px;max-width: 440px;"
+            >
+                <ch5-tab-button-individual-button labelinnerhtml="首页"></ch5-tab-button-individual-button>
+                <ch5-tab-button-individual-button labelinnerhtml="控制"></ch5-tab-button-individual-button>
+            </ch5-tab-button>
+        </div>
+    </div>
+
+    <ch5-triggerview>
+        <ch5-triggerview-child receiveStateShow="show_first_view_signal">
+            <ch5-template templateid="home-widget"></ch5-template>
+        </ch5-triggerview-child>
+        <ch5-triggerview-child receiveStateShow="show_second_view_signal">
+            <ch5-template templateid="control-widget"></ch5-template>
+        </ch5-triggerview-child>
+    </ch5-triggerview>
+
+    <!-- <ch5-template templateid="home-widget" style="display: none;"></ch5-template>
+    <ch5-template templateid="control-widget" style="display: block;"></ch5-template> -->
 
     <!-- END::CHANGEAREA -->
 </section>

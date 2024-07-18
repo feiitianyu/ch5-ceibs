@@ -1,0 +1,339 @@
+{
+  "cues": [
+    {
+      "type": "b",
+      "event": "all on",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all on",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "all off",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "present",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "maintain",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 50",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 70",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "all off",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all on",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "all off",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "present",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "maintain",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 50",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 70",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "present",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all on",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "all off",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "present",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "maintain",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 50",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 70",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "maintain",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all on",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "all off",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "present",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "maintain",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "projector 50",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 70",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "projector 50",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all on",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "all off",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "present",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "maintain",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 50",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "projector 70",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "projector 70",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all on",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "all off",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "present",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "maintain",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 50",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "projector 70",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "all screen on",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all screen on",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "all screen off",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "all screen off",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "all screen on",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "all screen off",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "curtain up",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "curtain up",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "curtain down",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "curtain down",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "curtain up",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "curtain down",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    }
+  ],
+  "onStart": []
+}

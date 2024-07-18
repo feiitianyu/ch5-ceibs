@@ -9,6 +9,60 @@
 
 #page1-page {
     // BEGIN::CHANGEAREA - your page level styles go here 
+    background-color: rgb(202, 202, 192);
+    min-width: 350px;
+    
+    .flex-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .primary-btn {
+        // background: linear-gradient(#4E98F6 0%,#2468E4 100%);
+        border-color: gray;
+        color: white;
+    }
+
+    .btn-icon {
+        margin-bottom: 8px;
+        width: 25px;
+    }
+
+    .second-btn {
+        // background: linear-gradient(#F5F5F5 0%,#D2D2D2 49%,#C1C2C5 51%,#C0C1C4 100%);
+        border-color: gray;
+        color: black;
+    }
+
+    #page1-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        #page1-header-right,#page1-header-left {
+            display: flex;
+
+            .ch5-button--text {
+                background: linear-gradient(#F5F5F5 0%,#D2D2D2 49%,#C1C2C5 51%,#C0C1C4 100%);
+                border: 1px solid gray;
+                border-radius: 4px;
+
+                .cb-btn {
+                    font-size: 18px;
+                    font-weight: 550;
+                }
+            }
+
+            .ch5-button--text.ch5-button--selected {
+                background: linear-gradient(#4E98F6 0%,#2468E4 100%);
+            }
+        }
+        
+        #page1-header-left {
+            align-items: center;
+        }
+
+    }
     // END::CHANGEAREA
 }
