@@ -14,9 +14,9 @@
     <!-- BEGIN::CHANGEAREA - your widget html markup goes here --> 
         <div class="home-widget-body">
             <ch5-background url="./app/project/assets/img/background.png"></ch5-background>
-            <div class="flex-center home-widget-body-course" style="margin-top: 100px;">
+            <div class="home-widget-body-course">
                 <!-- <ch5-button customclass="second-btn course-btn" style="margin-right: 40px;"> -->
-                <ch5-button customclass="course-btn" style="margin-right: 40px;" sendeventonclick="starting-up" receivestateselected="starting-up">
+                <ch5-button customclass="course-btn" sendeventonclick="starting-up" receivestateselected="starting-up">
                     <ch5-button-label>
                         <template>
                             <div style="display: flex;flex-direction: column;align-items: center;">
@@ -47,7 +47,7 @@
                     <div style="border-top: 1px solid;width: 120px;"></div>
                 </div>
             </div>
-            <div class="flex-center" style="margin-top: 30px">
+            <div class="mode-button-line1">
                 <ch5-button customclass="mode-btn" sendeventonclick="default mode" receivestateselected="default mode">
                     <ch5-button-label>
                         <template>
@@ -59,7 +59,7 @@
                         </template>
                     </ch5-button-label>
                 </ch5-button>
-                <ch5-button customclass="mode-btn" customstyle="margin: 0 60px" sendeventonclick="professor mode a" receivestateselected="professor mode a">
+                <ch5-button customclass="mode-btn" sendeventonclick="professor mode a" receivestateselected="professor mode a">
                     <ch5-button-label>
                         <template>
                             <img src="./app/project/assets/img/professor-primary.svg" class="btn-icon">
@@ -78,8 +78,8 @@
                     </ch5-button-label>
                 </ch5-button>
             </div>
-            <div class="flex-center" style="margin-top: 25px;">
-                <ch5-button customclass="mode-btn" customstyle="margin: 0 60px" sendeventonclick="online mode" receivestateselected="online mode">
+            <div class="mode-button-line2">
+                <ch5-button customclass="mode-btn"sendeventonclick="online mode" receivestateselected="online mode">
                     <ch5-button-label>
                         <template>
                             <img src="./app/project/assets/img/online-primary.svg" class="btn-icon">

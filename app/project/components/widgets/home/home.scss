@@ -11,26 +11,32 @@
     // BEGIN::CHANGEAREA - your widget level styles go here 
 
     .course-btn {
-        width: 220px;
-        height: 120px;
+        // width: 220px;
+        // height: 120px;
+        width: 18vw;
+        height: 15vh;
         color: black;
     }
 
     .mode-btn {
-        width: 220px;
-        height: 110px;
+        // width: 220px;
+        // height: 110px;
+        width: 18.3vw;
+        height: 13.75vh;
         border-color: gray;
         color: black;
         opacity: 0.5;
     }
 
     .mode-btn-content-zh {
-        font-size: 18px;
+        // font-size: 18px;
+        font-size: 1.5vw;
         font-weight: 550;
     }
 
     .mode-btn-content-en {
-        font-size: 18px;
+        // font-size: 18px;
+        font-size: 1.5vw;
         font-weight: 400;
     }
 
@@ -39,20 +45,10 @@
         height: 100%;
     }
 
-    .mode-btn-icon-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 25px;
-        height: 25px;
-        color: white;
-        border-radius: 6px;
-        font-size: 14px;
-    }
-
     .home-widget-body {
-        height: 700px;
-        min-height: 700px;
+        height: calc(100vh - 2rem - 44px);
+        // height: 700px;
+        // min-height: 700px;
         border: 1px solid gray;
         border-radius: 4px;
 
@@ -73,6 +69,10 @@
         }
     
         .home-widget-body-course {
+            display: flex;
+            justify-content: center;
+            gap: 3.3vw;
+            margin-top: 12.5vh;
 
             .start-course,.end-course {
                 color: black;
@@ -81,10 +81,25 @@
         }
 
         .home-widget-body-tip {
-            margin-top: 40px;
+            // margin-top: 40px;
+            margin-top: 5vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .mode-button-line1 {
+            display: flex;
+            justify-content: center;
+            gap: 5vw;
+            margin-top: 3.75vh;
+        }
+
+        .mode-button-line2 {
+            display: flex;
+            justify-content: center;
+            gap: 5vw;
+            margin-top: 3.125vh;
         }
 
         .mode-modal-dialog {
