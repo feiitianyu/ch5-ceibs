@@ -72,6 +72,12 @@
           "type": "boolean",
           "value": false,
           "logic": "set"
+        },
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
         }
       ]
     },
@@ -108,6 +114,12 @@
           "state": "custom mode",
           "type": "boolean",
           "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": true,
           "logic": "set"
         }
       ]
@@ -146,6 +158,12 @@
           "type": "boolean",
           "value": false,
           "logic": "set"
+        },
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
         }
       ]
     },
@@ -183,6 +201,12 @@
           "type": "boolean",
           "value": false,
           "logic": "set"
+        },
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
         }
       ]
     },
@@ -219,6 +243,68 @@
           "state": "custom mode",
           "type": "boolean",
           "value": true,
+          "logic": "set"
+        },
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": true,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "mode cancel",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "default mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode a",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "professor mode b",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "online mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        },
+        {
+          "state": "custom mode",
+          "type": "boolean",
+          "value": false,
+          "logic": "set"
+        }
+      ]
+    },
+    {
+      "type": "b",
+      "event": "mode ok",
+      "trigger": true,
+      "actions": [
+        {
+          "state": "mode show",
+          "type": "boolean",
+          "value": false,
           "logic": "set"
         }
       ]

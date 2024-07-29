@@ -101,21 +101,70 @@
 
             <ch5-modal-dialog
                 closable="false"
+                receiveStateShowPulse="starting-up"
+                hideOkButton="true"
+                hideCancelButton="true"
+                customclass="course-modal-dialog"
             >
-
+                <div>是否开始课程?</div>
+                <div style="margin-bottom: 30px;">Starting the class?</div>
+                <ch5-slider
+                    size="large"
+                    value="50"
+                    step="50"
+                    min="0"
+                    max="100"
+                >
+                    <!-- <ch5-slider-button key="off" style="background-color: transparent;">
+                        <ch5-slider-button-label>
+                            <template>
+                                <div>取消</div>
+                                <div>Cancel</div>
+                            </template> 
+                        </ch5-slider-button-label>
+                    </ch5-slider-button>
+                    <ch5-slider-button key="on">
+                        <ch5-slider-button-label>
+                            <template>
+                                <div>开始课程</div>
+                                <div>Start the class</div>
+                            </template> 
+                        </ch5-slider-button-label>
+                    </ch5-slider-button> -->
+                </ch5-slider>
             </ch5-modal-dialog>
 
             <ch5-modal-dialog
-                width="600px"
-                height="200px"
+                closable="false"
+                receiveStateShowPulse="shutting-down"
+                hideOkButton="true"
+                hideCancelButton="true"
+                customclass="course-modal-dialog"
+            >
+            <div>是否结束课程?</div>
+            <div style="margin-bottom: 30px;">End the class?</div>
+            <ch5-slider
+                size="large"
+                value="50"
+                step="50"
+                min="0"
+                max="100"
+            >
+            </ch5-slider>
+            </ch5-modal-dialog>
+
+            <ch5-modal-dialog
+                receiveStateShow="mode show"
                 closable="false"
                 dismissable="false"
                 mask
                 okbuttonlabel="确认"
                 cancelbuttonlabel="取消"
-                okbuttonstyle="width:100px;height:50px;background:linear-gradient(#F5F5F5 0%,#D2D2D2 49%,#C1C2C5 51%,#C0C1C4 100%);border: 1px solid gray;margin-right: 40px;"
-                cancelbuttonstyle="width:100px;height:50px;background:linear-gradient(#F5F5F5 0%,#D2D2D2 49%,#C1C2C5 51%,#C0C1C4 100%);border: 1px solid gray;"
+                okbuttonstyle="width:8.33vw;height:6.25vh;background:linear-gradient(#F5F5F5 0%,#D2D2D2 49%,#C1C2C5 51%,#C0C1C4 100%);border: 1px solid gray;margin-right: 40px;"
+                cancelbuttonstyle="width:8.33vw;height:6.25vh;background:linear-gradient(#F5F5F5 0%,#D2D2D2 49%,#C1C2C5 51%,#C0C1C4 100%);border: 1px solid gray;"
                 customclass="mode-modal-dialog"
+                sendEventOnOk="mode ok"
+                sendEventOnCancel="mode cancel"
             >
                 <div>请确认是否调用次模式</div>
                 <div>Please confirm  whether to call this mode</div>
